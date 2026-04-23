@@ -1,0 +1,56 @@
+# --- Entorno de Python ---
+venv/
+.venv/
+env/
+__pycache__/
+*.py[cod]
+*$py.class
+.ipynb_checkpoints/
+
+# --- Base de Datos y Persistencia ---
+# SQLite
+*.sqlite
+*.sqlite3
+*.db
+# LanceDB / Vector Store (carpetas de datos)
+.lancedb/
+data/vectors/
+
+# --- IA y Modelos ---
+# No subir modelos de Ollama o pesos descargados
+models/
+.ollama/
+*.gguf
+*.bin
+
+# --- Procesamiento Documental (Temporal) ---
+# Muy importante: donde 7z descomprime y Tesseract genera archivos
+temp/
+tmp/
+*.log
+output/
+# Evita subir los PDF/ZIP de prueba (Data Privada)
+ingest/
+processed/
+tests/fixtures/*.pdf
+tests/fixtures/*.zip
+tests/fixtures/*.rar
+tests/fixtures/*.7z
+
+# --- Configuración y Secretos ---
+.env
+.secrets
+.vscode/
+.idea/
+
+# --- Sistema y Binarios ---
+# Si descargas los binarios de 7z o Tesseract para portabilidad
+bin/
+*.exe
+*.dll
+*.so
+*.dylib
+
+# --- Documentación (Opcional) ---
+# Si generas HTML de la documentación (ej. con MkDocs)
+site/

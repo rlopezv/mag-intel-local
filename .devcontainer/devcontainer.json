@@ -1,0 +1,19 @@
+{
+    "name": "mag-intel-local-dev",
+    "build": {
+        "dockerfile": "Dockerfile"
+    },
+    "runArgs": ["--gpus", "all"],
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-python.python",
+                "ms-python.vscode-pylance",
+                "charliermarsh.ruff",
+                "tamasfe.even-better-toml",
+                "jebbs.mermaid"
+            ]
+        }
+    },
+    "remoteUser": "vscode"
+}
